@@ -1,0 +1,143 @@
+!SESSION 2017-04-16 22:39:24.513 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/ayousha/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/ayousha/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2017-04-16 22:39:59.388
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-16 22:39:59.388
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2526d5f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b529d42,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-16 22:39:59.947
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-04-16 22:40:23.629
+!MESSAGE Error creating default filter pool
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1097)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:848)
+	at org.eclipse.swt.widgets.Display.create(Display.java:831)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:721)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:712)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1427)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.runOnMainThread(SystemRegistry.java:2523)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.fireModelChangeEvent(SystemRegistry.java:2559)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.filterEventFilterPoolCreated(SubSystemConfiguration.java:2090)
+	at org.eclipse.rse.internal.core.filters.SystemFilterPoolManager.createSystemFilterPool(SystemFilterPoolManager.java:400)
+	at org.eclipse.rse.subsystems.files.local.LocalFileSubSystemConfiguration.createDefaultFilterPool(LocalFileSubSystemConfiguration.java:105)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.getFilterPoolManager(SubSystemConfiguration.java:1659)
+	at org.eclipse.rse.internal.core.model.SystemRegistry$1$CreateHostOperation.run(SystemRegistry.java:1625)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.runOperation(SystemProfileManager.java:98)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.run(SystemProfileManager.java:89)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1637)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-04-16 22:40:23.691
+!MESSAGE Error saving new subsystem Local Files
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1097)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:848)
+	at org.eclipse.swt.widgets.Display.create(Display.java:831)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:721)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:712)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1427)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.runOnMainThread(SystemRegistry.java:2523)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.fireModelChangeEvent(SystemRegistry.java:2559)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.createSubSystem(SubSystemConfiguration.java:1052)
+	at org.eclipse.rse.internal.core.model.SystemRegistry$1$CreateHostOperation.run(SystemRegistry.java:1627)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.runOperation(SystemProfileManager.java:98)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.run(SystemProfileManager.java:89)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1637)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-04-16 22:40:23.699
+!MESSAGE Error saving new subsystem Local Shells
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1097)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:848)
+	at org.eclipse.swt.widgets.Display.create(Display.java:831)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:721)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:712)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1427)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.runOnMainThread(SystemRegistry.java:2523)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.fireModelChangeEvent(SystemRegistry.java:2559)
+	at org.eclipse.rse.core.subsystems.SubSystemConfiguration.createSubSystem(SubSystemConfiguration.java:1052)
+	at org.eclipse.rse.internal.core.model.SystemRegistry$1$CreateHostOperation.run(SystemRegistry.java:1627)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.runOperation(SystemProfileManager.java:98)
+	at org.eclipse.rse.internal.core.model.SystemProfileManager.run(SystemProfileManager.java:89)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1637)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.rse.core 4 0 2017-04-16 22:40:23.702
+!MESSAGE Error creating local connection
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1097)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:848)
+	at org.eclipse.swt.widgets.Display.create(Display.java:831)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:721)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:712)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1427)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1650)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createHost(SystemRegistry.java:1537)
+	at org.eclipse.rse.internal.core.model.SystemRegistry.createLocalHost(SystemRegistry.java:1505)
+	at org.eclipse.rse.internal.core.RSELocalConnectionInitializer.run(RSELocalConnectionInitializer.java:52)
+	at org.eclipse.rse.internal.core.RSEInitJob.runInitializer(RSEInitJob.java:310)
+	at org.eclipse.rse.internal.core.RSEInitJob.run(RSEInitJob.java:222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-04-16 22:40:24.583
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob
