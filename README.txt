@@ -2,6 +2,7 @@ GW/UMD CLPsych ReachOut shared-task source code
 Authors: 
 Ayah Zirikly	ayaz@gwu.edu
 Varun Kumar	varunk@cs.umd.edu
+Philip Resnik resnik@umd.edu
 
 -Last update: April 2016
 
